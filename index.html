@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Telegram Join Now</title>
 
-<!-- Facebook / Social Media Preview -->
+<!-- ✅ Social Media Preview (Facebook / Messenger) -->
 <meta property="og:title" content="Telegram Join Now">
-<meta property="og:description" content="আমাদের টেলিগ্রাম গ্রুপে ভাইরাল সব ভিডিও দেওয়া আছে">
+<meta property="og:description" content="সব ভাইরাল ভিডিও পেতে এখনই জয়েন করুন">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://t-me-link.netlify.app/">
-<meta property="og:image" content="https://i.imgur.com/your-black-image.jpg">
+<meta property="og:image" content="https://i.imgur.com/tZKQF5R.png">
 <meta property="og:site_name" content="Telegram Group">
 
 <style>
@@ -20,74 +20,81 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
 }
 .container {
     background: #fff;
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     text-align: center;
     width: 90%;
     max-width: 400px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
-h1 {
-    color: #0088cc;
+img {
+    width: 100px;
     margin-bottom: 15px;
 }
-p {
-    margin-bottom: 25px;
-    font-size: 16px;
+h2 {
+    color: #0088cc;
 }
 button {
     background: #0088cc;
-    color: white;
+    color: #fff;
     border: none;
-    padding: 16px 25px;
+    padding: 15px;
+    width: 100%;
     font-size: 18px;
     border-radius: 6px;
-    width: 90%;
     cursor: pointer;
 }
 button:hover {
     background: #006699;
 }
-img {
-    width: 100%;
-    border-radius: 6px;
-    margin-bottom: 20px;
-}
-.countdown {
+#text {
+    margin: 15px 0;
     font-weight: bold;
     color: #0088cc;
-    margin-bottom: 20px;
 }
 </style>
 
 <script>
-// 2-second countdown and auto redirect
-let timeLeft = 2;
-function countdown() {
-    document.getElementById('count').innerText = timeLeft;
-    if(timeLeft === 0) {
-        window.location.href = "https://www.profitablecpmratenetwork.com/z67kd7ek01?key=9aac7032703de52412efb73802fd16ca";
-    }
-    timeLeft--;
+// ✅ Random Link System (2–3 link use করতে পারো)
+function goLink() {
+    var links = [
+        "https://www.profitablecpmratenetwork.com/tmq9wedj?key=0c52d3482153727bed804593a2395158",
+        "https://www.profitablecpmratenetwork.com/wua3wbja6?key=885056499c038fffce21d04930df92c6"
+    ];
+    var random = links[Math.floor(Math.random() * links.length)];
+    window.location.href = random;
 }
-setInterval(countdown, 1000);
+
+// ✅ Human-like redirect text change
+setTimeout(function(){
+    document.getElementById("text").innerText = "Connecting to Telegram...";
+}, 2000);
+
+// ✅ Auto redirect (4 sec পরে)
+setTimeout(goLink, 4000);
 </script>
 
 </head>
+
 <body>
 
 <div class="container">
-    <img src="https://i.imgur.com/your-black-image.jpg" alt="Telegram Group">
-    <h1>🔒 Telegram: Join Now</h1>
-    <p class="countdown">Redirecting in <span id="count">3</span> seconds...</p>
-    <a href="https://www.profitablecpmratenetwork.com/z67kd7ek01?key=9aac7032703de52412efb73802fd16ca">
-        <button>👉 JOIN NOW 👈</button>
-    </a>
+    <!-- Telegram Icon -->
+    <img src="https://i.imgur.com/tZKQF5R.png" alt="Telegram">
+
+    <h2>🔒 Telegram Private Group</h2>
+
+    <p id="text">Checking access...</p>
+
+    <p>Join করতে নিচের বাটনে ক্লিক করুন</p>
+
+    <!-- Button Click -->
+    <button onclick="goLink()">👉 JOIN NOW 👈</button>
 </div>
 
 </body>
